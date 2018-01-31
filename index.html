@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>潘慧敏的个人简历</title>
+    <script src="https://at.alicdn.com/t/font_451045_32zbfqegtq3t0529.js"></script>
+    <link rel="stylesheet" href="./a.css">
+</head>
+
+<body>
+      <div id="siteWelcome" class="site-welcome active">
+        <div class="loading"></div>
+      </div>
+    <div id="topNavBar" class="topNavBar clearfix">
+        <div class="topNavBar-inner clearfix">
+            <a href="#" class="logo" alt="logo" style="float: left; ">
+            <span class="rs">RS</span><span class="card">card</span>
+            </a>
+            <nav class="menu" style="float: right ">
+                <ul class="clearfix">
+                    <li>
+                        <a href="#siteAbout">关于</a>
+                    </li>
+                    <li>
+                        <a href="#siteSkills">技能</a>
+                    </li>
+                    <li>
+                        <a href="#siteWorks">作品</a>
+                        <ul class="submenu">
+                          <li>作品1</li>
+                          <li>作品2</li>
+                          <li>作品3</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">博客</a>
+                    </li>
+                    <li>
+                        <a href="#">日历</a>
+                    </li>
+                    <li>
+                        <a href="#">联系方式</a>
+                    </li>
+                    <li>
+                        <a href="#">其他</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="banner">
+        <div class="mask"></div>
+    </div>
+    <main>
+        <div id="siteAbout" class="userCard">
+            <div class="pictureAndText clearfix">
+                <div class="picture">
+                    <img src="img/avatar.jpg" width=299 height=347 alt="头像">
+                </div>
+                <div class="text">
+                    <div class="profile">
+                        <span class="welcome">Hello<span class="triangle"></span></span>
+                        <h1>潘慧敏</h1>
+                        <p>前端开发工程师</p>
+                        <hr>
+                        <dl>
+                            <dt>年龄</dt>
+                            <dd>20</dd>
+                            <dt>所在城市</dt>
+                            <dd>西安</dd>
+                            <dt>邮箱</dt>
+                            <dd>867159647@qq.com</dd>
+                            <dt>手机</dt>
+                            <dd>18829490766</dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+            <footer class="media">
+                <a href="#">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-github"></use>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-Ankerwebicon-"></use>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-weibo"></use>
+                    </svg>
+                </a>
+            </footer>
+        </div>
+        <p class="downloadResume-wrapper">
+            <a class="downloadResume" target="_blank" href="#" download>下载 PDF 简历</a>
+        </p>
+        <p class="selfIntroduction">
+            潘慧敏，准前端开发工程师，现在是一名在校大三学生。
+            <br> 技能：前端开发，React 开发，Node.js 开发
+        </p>
+    </main>
+    <section id="siteSkills" class="skills">
+        <h2>技能</h2>
+        <ol class="clearfix">
+            <li>
+                <h3>
+                  HTML
+                </h3>
+                <div class="progressBar">
+                    <div class="progress" style="width: 88%;"></div>
+                </div>
+            </li>
+            <li>
+                <h3>
+                  CSS
+                </h3>
+                <div class="progressBar">
+                    <div class="progress" style="width: 83%"></div>
+                </div>
+            </li>
+            <li>
+                <h3>
+                  JavaScript
+                </h3>
+                <div class="progressBar">
+                    <div class="progress" style="width: 80%"></div>
+                </div>
+            </li>
+            <li>
+                <h3>
+                  Vue.js
+                </h3>
+                <div class="progressBar">
+                    <div class="progress" style="width: 40%"></div>
+                </div>
+            </li>
+            <li>
+                <h3>
+                  React.js
+                </h3>
+                <div class="progressBar">
+                    <div class="progress" style="width: 50%"></div>
+                </div>
+            </li>
+            <li>
+                <h3>
+                  Node.js
+                </h3>
+                <div class="progressBar">
+                    <div class="progress" style="width: 60%"></div>
+                </div>
+            </li>
+        </ol>
+    </section>
+    <section class="portfolio"  id="siteWorks">
+        <h2>作品集</h2>
+        <nav>
+            <ol class="clearfix">
+                <li id="portfolio1">所有</li>
+                <li id="portfolio2">框架</li>
+                <li id="portfolio3">原生JS&amp;CSS</li>
+            </ol>
+            <div id="portfolioBar" class="bar state-1">
+                <div class="bar-inner"></div>
+            </div>
+        </nav>
+        <script>
+        portfolio1.onclick = function() {
+            portfolioBar.className = 'bar state-1'
+        }
+        portfolio2.onclick = function() {
+            portfolioBar.className = 'bar state-2'
+        }
+        portfolio3.onclick = function() {
+            portfolioBar.className = 'bar state-3'
+        }
+        </script>
+        <div class="works" style="height: 597px;">
+            <div class="big" style="top: 0; left: 0;">
+                <img src="./img/1.jpg" alt="作品1">
+            </div>
+            <div class="small" style="top: 0; left: 645px;">
+                <img src="./img/2.jpg" alt="作品2">
+            </div>
+            <div class="small" style="top: 312px; left: 645px;">
+                <img src="./img/3.jpg" alt="作品3">
+            </div>
+        </div>
+    </section>
+
+    <script>
+         setTimeout(function(){
+      siteWelcome.classList.remove('active')    
+    },1500)
+
+         window.onscroll = function (xxx){
+            // console.log(window.scrollY)
+            if (window.scrollY > 0){
+                topNavBar.classList.add('sticky')
+            } else {
+                topNavBar.classList.remove('sticky')
+            }
+         }
+
+let liTags = document.querySelectorAll('nav.menu > ul > li')
+for(let i=0; i<liTags.length; i++){
+  liTags[i].onmouseenter = function(x){
+    x.currentTarget.classList.add('active')
+  }
+  liTags[i].onmouseleave = function(x){
+    x.currentTarget.classList.remove('active')
+  }
+}
+let aTags = document.querySelectorAll('nav.menu > ul > li > a')
+for(let i=0; i<aTags.length; i++){
+  aTags[i].onclick = function(x){
+    x.preventDefault()
+    let a = x.currentTarget
+    let href = a.getAttribute('href') //'#siteAbout'
+    let element = document.querySelector(href)
+    console.log(href)
+    console.log(element)
+    let top = element.offsetTop
+    window.scrollTo(0, top - 80)
+  }
+}
+    </script>
+</body>
+
+</html>
