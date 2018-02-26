@@ -2,278 +2,201 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>潘慧敏的个人简历</title>
-    <script src="https://at.alicdn.com/t/font_451045_32zbfqegtq3t0529.js"></script>
-    <link rel="stylesheet" href="./a.css">
+	<meta charset="UTF-8">
+	<title>潘慧敏的个人简历</title>
+	<script src="https://at.alicdn.com/t/font_451045_32zbfqegtq3t0529.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/css/swiper.min.css">
+	<link rel="stylesheet" href="./main.css">
 </head>
 
+
 <body>
-    <div id="siteWelcome" class="site-welcome">
-        <div class="loading"></div>
-    </div>
-    <div id="topNavBar" class="topNavBar clearfix">
-        <div class="topNavBar-inner clearfix">
-            <a href="#" class="logo" alt="logo" style="float: left; ">
-            <span class="rs">RS</span><span class="card">card</span>
-            </a>
-            <nav class="menu" style="float: right ">
-                <ul class="clearfix">
-                    <li>
-                        <a href="#siteAbout">关于</a>
-                    </li>
-                    <li>
-                        <a href="#siteSkills">技能</a>
-                    </li>
-                    <li>
-                        <a href="#siteWorks">作品</a>
-                        <ul class="submenu">
-                            <li>作品1</li>
-                            <li>作品2</li>
-                            <li>作品3</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">博客</a>
-                    </li>
-                    <li>
-                        <a href="#">日历</a>
-                    </li>
-                    <li>
-                        <a href="#">联系方式</a>
-                    </li>
-                    <li>
-                        <a href="#">其他</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </div>
-    <div class="banner">
-        <div class="mask"></div>
-    </div>
-    <main>
-        <div data-x id="siteAbout" class="userCard">
-            <div class="pictureAndText clearfix">
-                <div class="picture">
-                    <img src="img/avatar.jpg" width=299 height=347 alt="头像">
-                </div>
-                <div class="text">
-                    <div class="profile">
-                        <span class="welcome">Hello<span class="triangle"></span></span>
-                        <h1>潘慧敏</h1>
-                        <p>前端开发工程师</p>
-                        <hr>
-                        <dl>
-                            <dt>年龄</dt>
-                            <dd>20</dd>
-                            <dt>所在城市</dt>
-                            <dd>西安</dd>
-                            <dt>邮箱</dt>
-                            <dd>867159647@qq.com</dd>
-                            <dt>手机</dt>
-                            <dd>18829490766</dd>
-                        </dl>
-                    </div>
-                </div>
-            </div>
-            <footer class="media">
-                <a href="#">
-                    <svg class="icon" aria-hidden="true">
-                        <use xlink:href="#icon-github"></use>
-                    </svg>
-                </a>
-                <a href="#">
-                    <svg class="icon" aria-hidden="true">
-                        <use xlink:href="#icon-Ankerwebicon-"></use>
-                    </svg>
-                </a>
-                <a href="#">
-                    <svg class="icon" aria-hidden="true">
-                        <use xlink:href="#icon-weibo"></use>
-                    </svg>
-                </a>
-            </footer>
-        </div>
-        <p class="downloadResume-wrapper">
-            <a class="downloadResume" target="_blank" href="#" download>下载 PDF 简历</a>
-        </p>
-        <p class="selfIntroduction">
-            潘慧敏，准前端开发工程师，现在是一名在校大三学生。
-            <br> 技能：前端开发，React 开发，Node.js 开发
-        </p>
-    </main>
-    <section data-x id="siteSkills" class="skills">
-        <h2>技能</h2>
-        <ol class="clearfix">
-            <li>
-                <h3>
-                  HTML
-                </h3>
-                <div class="progressBar">
-                    <div class="progress" style="width: 88%;"></div>
-                </div>
-            </li>
-            <li>
-                <h3>
-                  CSS
-                </h3>
-                <div class="progressBar">
-                    <div class="progress" style="width: 83%"></div>
-                </div>
-            </li>
-            <li>
-                <h3>
-                  JavaScript
-                </h3>
-                <div class="progressBar">
-                    <div class="progress" style="width: 80%"></div>
-                </div>
-            </li>
-            <li>
-                <h3>
-                  Vue.js
-                </h3>
-                <div class="progressBar">
-                    <div class="progress" style="width: 40%"></div>
-                </div>
-            </li>
-            <li>
-                <h3>
-                  React.js
-                </h3>
-                <div class="progressBar">
-                    <div class="progress" style="width: 50%"></div>
-                </div>
-            </li>
-            <li>
-                <h3>
-                  Node.js
-                </h3>
-                <div class="progressBar">
-                    <div class="progress" style="width: 60%"></div>
-                </div>
-            </li>
-        </ol>
-    </section>
-    <section data-x class="portfolio" id="siteWorks">
-        <h2>作品集</h2>
-        <nav>
-            <ol class="clearfix">
-                <li id="portfolio1">所有</li>
-                <li id="portfolio2">框架</li>
-                <li id="portfolio3">原生JS&amp;CSS</li>
-            </ol>
-            <div id="portfolioBar" class="bar state-1">
-                <div class="bar-inner"></div>
-            </div>
-        </nav>
-        <script>
-        portfolio1.onclick = function() {
-            portfolioBar.className = 'bar state-1'
-        }
-        portfolio2.onclick = function() {
-            portfolioBar.className = 'bar state-2'
-        }
-        portfolio3.onclick = function() {
-            portfolioBar.className = 'bar state-3'
-        }
-        </script>
-        <div class="works" style="height: 597px;">
-            <div class="big" style="top: 0; left: 0;">
-                <img src="./img/1.jpg" alt="作品1">
-            </div>
-            <div class="small" style="top: 0; left: 645px;">
-                <img src="./img/2.jpg" alt="作品2">
-            </div>
-            <div class="small" style="top: 312px; left: 645px;">
-                <img src="./img/3.jpg" alt="作品3">
-            </div>
-        </div>
-    </section>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/17.1.1/Tween.min.js"></script>
-    <script>
-    setTimeout(function() {
-        siteWelcome.classList.remove('active')
-
-    }, 1000)
-
-    let specialTags = document.querySelectorAll('[data-x]')
-    for(let i =0;i<specialTags.length; i++){
-      specialTags[i].classList.add('offset')
-    }
-    findClosest()
-
-    window.onscroll = function(x) {
-        // console.log(window.scrollY)
-        if (window.scrollY > 0) {
-            topNavBar.classList.add('sticky')
-        } else {
-            topNavBar.classList.remove('sticky')
-        }
-        findClosest()
-    }
-
-    function findClosest(){
-      let specialTags = document.querySelectorAll('[data-x]')
-      let minIndex = 0
-      for(let i =1;i<specialTags.length; i++){
-        if(Math.abs(specialTags[i].offsetTop - window.scrollY) < Math.abs(specialTags[minIndex].offsetTop - window.scrollY)){
-          minIndex = i
-        }
-    }
-      // minIndex 就是里窗口顶部最近的元素
-      specialTags[minIndex].classList.remove('offset')
-      let id = specialTags[minIndex].id
-      let a = document.querySelector('a[href="#'+ id + '"]')
-      let li = a.parentNode
-      let brothersAndMe = li.parentNode.children
-      for(let i=0; i<brothersAndMe.length; i++){
-        brothersAndMe[i].classList.remove('highlight')
-      }
-      li.classList.add('highlight')
-    }
-
-    let liTags = document.querySelectorAll('nav.menu > ul > li')
-    for (let i = 0; i < liTags.length; i++) {
-        liTags[i].onmouseenter = function(x) {
-            x.currentTarget.classList.add('active')
-        }
-        liTags[i].onmouseleave = function(x) {
-            x.currentTarget.classList.remove('active')
-        }
-    }
-
-    let aTags = document.querySelectorAll('nav.menu > ul > li > a')
-    function animate(time) {
-      requestAnimationFrame(animate);
-      TWEEN.update(time);
-    }
-    requestAnimationFrame(animate);
-    for(let i=0; i<aTags.length; i++){
-      aTags[i].onclick = function(x){
-        x.preventDefault()
-        let a = x.currentTarget
-        let href = a.getAttribute('href') //'#siteAbout'
-        let element = document.querySelector(href)
-        let top = element.offsetTop
-        let currentTop = window.scrollY
-        let targetTop = top - 80
-        let s = targetTop - currentTop // 路程
-        var coords = { y: currentTop}; // 起始位置
-        var t = Math.abs((s/100)*300) // 时间
-        if(t>500){ t = 500 }
-        var tween = new TWEEN.Tween(coords) // 起始位置
-          .to({ y: targetTop}, t) // 结束位置 和 时间
-          .easing(TWEEN.Easing.Cubic.InOut) // 缓动类型
-          .onUpdate(function() {
-            // coords.y 已经变了
-            window.scrollTo(0,coords.y) // 如何更新界面
-          })
-          .start(); // 开始缓动
-        }
-    }
-    </script>
+	<div id="topNavBar" class="topNavBar clearfix">
+		<div class="topNavBar-inner clearfix">
+			<a href="#" class="logo" alt="logo" style="float: left; ">
+			<span class="rs">RS</span><span class="card">card</span>
+			</a>
+			<nav class="menu" style="float: right ">
+				<ul class="clearfix">
+					<li>
+						<a href="#siteAbout">关于</a>
+					</li>
+					<li>
+						<a href="#siteSkills">技能</a>
+					</li>
+					<li>
+						<a href="#siteWorks">作品</a>
+						<ul class="submenu">
+							<li>作品1</li>
+							<li>作品2</li>
+							<li>作品3</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">博客</a>
+					</li>
+					<li>
+						<a href="#">日历</a>
+					</li>
+					<li>
+						<a href="#">联系方式</a>
+					</li>
+					<li>
+						<a href="#">其他</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+	<div class="banner">
+		<div class="mask"></div>
+	</div>
+	<main>
+		<div data-x id="siteAbout" class="userCard">
+			<div class="pictureAndText clearfix">
+				<div class="picture">
+					<img src="img/avatar.jpg" width=299 height=347 alt="头像">
+				</div>
+				<div class="text">
+					<div class="profile">
+						<span class="welcome">Hello<span class="triangle"></span></span>
+						<h1>潘慧敏</h1>
+						<p>前端开发工程师</p>
+						<hr>
+						<dl>
+							<dt>年龄</dt>
+							<dd>20</dd>
+							<dt>所在城市</dt>
+							<dd>西安</dd>
+							<dt>邮箱</dt>
+							<dd>867159647@qq.com</dd>
+							<dt>手机</dt>
+							<dd>18829490766</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+			<footer class="media">
+				<a href="#">
+					<svg class="icon" aria-hidden="true">
+						<use xlink:href="#icon-github"></use>
+					</svg>
+				</a>
+				<a href="#">
+					<svg class="icon" aria-hidden="true">
+						<use xlink:href="#icon-Ankerwebicon-"></use>
+					</svg>
+				</a>
+				<a href="#">
+					<svg class="icon" aria-hidden="true">
+						<use xlink:href="#icon-weibo"></use>
+					</svg>
+				</a>
+			</footer>
+		</div>
+		<p class="downloadResume-wrapper">
+			<a class="downloadResume" target="_blank" href="#" download>下载 PDF 简历</a>
+		</p>
+		<p class="selfIntroduction">
+			潘慧敏，准前端开发工程师，现在是一名在校大三学生。
+			<br> 技能：前端开发，React 开发，Node.js 开发
+		</p>
+	</main>
+	<section data-x id="siteSkills" class="skills">
+		<h2>技能</h2>
+		<ol class="clearfix">
+			<li>
+				<h3>
+				  HTML
+				</h3>
+				<div class="progressBar">
+					<div class="progress" style="width: 88%;"></div>
+				</div>
+			</li>
+			<li>
+				<h3>
+				  CSS
+				</h3>
+				<div class="progressBar">
+					<div class="progress" style="width: 83%"></div>
+				</div>
+			</li>
+			<li>
+				<h3>
+				  JavaScript
+				</h3>
+				<div class="progressBar">
+					<div class="progress" style="width: 80%"></div>
+				</div>
+			</li>
+			<li>
+				<h3>
+				  Vue.js
+				</h3>
+				<div class="progressBar">
+					<div class="progress" style="width: 40%"></div>
+				</div>
+			</li>
+			<li>
+				<h3>
+				  React.js
+				</h3>
+				<div class="progressBar">
+					<div class="progress" style="width: 50%"></div>
+				</div>
+			</li>
+			<li>
+				<h3>
+				  Node.js
+				</h3>
+				<div class="progressBar">
+					<div class="progress" style="width: 60%"></div>
+				</div>
+			</li>
+		</ol>
+	</section>
+	<section data-x class="portfolio" id="siteWorks">
+		<h2>作品集</h2>
+		<!-- Slider main container -->
+		<div id="mySlides">
+			<div class="swiper-container">
+				<!-- Additional required wrapper -->
+				<div class="swiper-wrapper">
+					<!-- Slides -->
+					<img src="./img/works/nav-page.jpg" class="swiper-slide">
+					<img src="./img/works/canvas.jpg" class="swiper-slide">
+					<img src="./img/works/apple-style-slides.jpg" class="swiper-slide">
+				</div>
+				<!-- If we need pagination -->
+				<div class="swiper-pagination"></div>
+				<!-- If we need navigation buttons -->
+			</div>
+			<div class="swiper-button-prev"></div>
+			<div class="swiper-button-next"></div>
+		</div>
+	</section>
+		<section class="message">
+		<h2>留言</h2>
+		<ol id="messageList">
+		</ol>
+		<form id="postMessageForm" style="width: 700px; margin: 50px auto;">
+			<label for="">姓名</label>
+			<input type="text" name="name">
+			<label for="">内容</label>
+			<input type="text" name="content">
+			<input type="submit" value="提交">
+		</form>
+	</section>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/17.1.1/Tween.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/js/swiper.min.js"></script>
+	<script src="https://cdn1.lncld.net/static/js/3.5.0/av-min.js"></script>
+	<!-- 模块化 -->
+	<script src="./js/init-swiper.js"></script>
+	<script src="./js/auto-slide-up.js"></script>
+	<script src="./js/sticky-topbar.js"></script>
+	<script src="./js/smoothly-navigation.js"></script>
+	<script src="./js/message.js"></script>
+	
 </body>
 
 </html>
